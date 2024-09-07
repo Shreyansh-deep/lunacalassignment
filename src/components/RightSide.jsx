@@ -102,6 +102,8 @@ const RightSide = () => {
             </p>
           </>
         );
+       default:
+        return ""
     }
   };
   return (
