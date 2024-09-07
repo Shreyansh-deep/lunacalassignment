@@ -11,7 +11,6 @@ import img5 from "../assets/5.jpg";
 
 const RightSide = () => {
   const [imgArray, setImgArray] = useState([img1, img2, img3, img4, img5]);
-  const [selectedFile, setSelectedFile] = useState(null);
   const [activeTab, setActiveTab] = useState("aboutMe");
 
   const handleTabClick = (tab) => {
@@ -28,7 +27,6 @@ const RightSide = () => {
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
-    setSelectedFile(file);
     readImageFile(file);
   };
 
